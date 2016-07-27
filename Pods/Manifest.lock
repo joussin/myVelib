@@ -1,0 +1,18 @@
+PODS:
+  - Alamofire (3.4.1)
+  - Flurry-iOS-SDK/FlurrySDK (7.6.4)
+  - SwiftyJSON (2.3.2)
+
+DEPENDENCIES:
+  - Alamofire (~> 3.4)
+  - Flurry-iOS-SDK/FlurrySDK
+  - SwiftyJSON
+
+SPEC CHECKSUMS:
+  Alamofire: 01a82e2f6c0f860ade35534c8dd88be61bdef40c
+  Flurry-iOS-SDK: 9da972687d3af9f48038dcd86eae9cad3acca456
+  SwiftyJSON: 04ccea08915aa0109039157c7974cf0298da292a
+
+PODFILE CHECKSUM: a6b4781cda9636b9f85fbb445b499c527b6fbd54
+
+COCOAPODS: 1.0.1

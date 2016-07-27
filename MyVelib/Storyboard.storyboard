@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Alert View Controller-->
+        <scene sceneID="OsH-vc-mgX">
+            <objects>
+                <viewController storyboardIdentifier="AlertViewController" modalTransitionStyle="crossDissolve" modalPresentationStyle="overCurrentContext" id="yG1-WZ-cgA" customClass="AlertViewController" customModule="MyVelib" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="NKZ-bL-7td"/>
+                        <viewControllerLayoutGuide type="bottom" id="EHj-rV-byW"/>
+                    </layoutGuides>
+                    <view key="view" opaque="NO" contentMode="scaleToFill" id="lCR-zB-Oll">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view alpha="0.69999999999999996" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DMM-aY-yhL">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OiD-km-37g">
+                                <rect key="frame" x="180" y="236" width="240" height="128"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XjP-Z8-QMP">
+                                        <rect key="frame" x="28" y="24" width="198" height="52"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nQq-71-WAF">
+                                        <rect key="frame" x="50" y="84" width="46" height="30"/>
+                                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                        <state key="normal" title="OK">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="okPressed:" destination="yG1-WZ-cgA" eventType="touchUpInside" id="d1V-xG-ATu"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KC7-bp-peQ">
+                                        <rect key="frame" x="135" y="84" width="56" height="30"/>
+                                        <state key="normal" title="Cancel">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="cancelPressed:" destination="yG1-WZ-cgA" eventType="touchUpInside" id="n3h-W8-Uha"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="8fa-Nb-yB8"/>
+                                    <constraint firstAttribute="width" constant="240" id="mYg-7k-Wkz"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="OiD-km-37g" firstAttribute="centerY" secondItem="lCR-zB-Oll" secondAttribute="centerY" id="9kq-pQ-oF4"/>
+                            <constraint firstItem="DMM-aY-yhL" firstAttribute="height" secondItem="lCR-zB-Oll" secondAttribute="height" id="K7c-J4-w8w"/>
+                            <constraint firstItem="OiD-km-37g" firstAttribute="centerX" secondItem="lCR-zB-Oll" secondAttribute="centerX" id="KLU-kX-nEN"/>
+                            <constraint firstItem="DMM-aY-yhL" firstAttribute="width" secondItem="lCR-zB-Oll" secondAttribute="width" id="cWL-Ay-5eu"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="DMM-aY-yhL" secondAttribute="trailing" constant="340" id="hTb-VQ-mXp"/>
+                            <constraint firstItem="DMM-aY-yhL" firstAttribute="centerX" secondItem="lCR-zB-Oll" secondAttribute="centerX" id="p7j-D9-96D"/>
+                            <constraint firstItem="DMM-aY-yhL" firstAttribute="top" secondItem="NKZ-bL-7td" secondAttribute="bottom" constant="-20" id="rQu-um-hin"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="hTb-VQ-mXp"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="cancelButton" destination="KC7-bp-peQ" id="m9h-yB-NBH"/>
+                        <outlet property="messageLabel" destination="XjP-Z8-QMP" id="rJj-nF-7y7"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="l1r-B6-16a" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="197" y="302"/>
+        </scene>
+    </scenes>
+</document>

@@ -1,0 +1,14 @@
+/* 
+  Localizable.strings
+  MyVelib
+
+  Created by etudiant-02 on 22/06/2016.
+  Copyright © 2016 etudiant-02. All rights reserved.
+*/
+
+"main.infoLabel" = "Nothing in fav, click on the top button to add them";
+
+"map.segment.0" = "Cycle";
+"map.segment.1" = "Parking";
+
+"map.backBtn" = "Back";

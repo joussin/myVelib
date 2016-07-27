@@ -1,0 +1,14 @@
+/* 
+  Localizable.strings
+  MyVelib
+
+  Created by etudiant-02 on 22/06/2016.
+  Copyright © 2016 etudiant-02. All rights reserved.
+*/
+"main.infoLabel" = "Aucune station en favori, cliquez sur le bouton ci-dessus pour en ajouter";
+
+
+"map.segment.0" = "Vélo";
+"map.segment.1" = "Place";
+
+"map.backBtn" = "Retour";
